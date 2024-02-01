@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link resl="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header" class="header">
+		<a href="#" class="header__logo">Barsik <br> <span class="logo__style">shop</span> </a>
+		<div class="header__menu menu">
+			<div class="menu__icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#header" class="menu__link">Главная</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+					<li class="menu__item"><a href="#search-container" class="menu__link">Товары</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+		
+	<main class="main">
+		<!-- <div class="main__search">
+			<div class="col-md-4">
+				<form action="">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Найти товар" aria-label="Найти товар" aria-describedby="button-search">
+						<button class="btn btn-outline-warning" type="button" id="button-search">Найти</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<section class="section__first">
+			<h2 class="section__first-title">
+				О нас
+			</h2>
+		</section> -->
+
+		<div id="search-container">
+			<input type="text" id="search-input" placeholder="Поиск товара">
+			<button id="search-button">Поиск</button>
+		  </div>
+		
+		  <div id="products-container">
+			<div class="product">
+			  <img class="photo__catalog" src="img/13383602-1-1000x1000.jpg" alt="Домик для кошек">
+			  <h2>Товар 100</h2>
+			  <p>Артикул товара 1: 12345</p>
+			  <button class="add-to-cart">Добавить в корзину</button>
+			</div>
+		
+			<div class="product">
+			  <img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+			  <h2>Товар 101</h2>
+			  <p>Артикул товара 2: 12345</p>
+			  <button class="add-to-cart">Добавить в корзину</button>
+			</div>
+		
+			<div class="product">
+			  <img class="photo__catalog" src="img/13383602-1-1000x1000.jpg" alt="Домик для кошек">
+			  <h2>Товар 1</h2>
+			  <p>Артикул товара 3: 12345</p>
+			  <button class="add-to-cart">Добавить в корзину</button>
+			</div>
+
+			<div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 2</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 3</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 4</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 5</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 6</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 7</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 8</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 9</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 10</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 11</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 12</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 13</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 14</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 15</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 16</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 17</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 18</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 19</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+
+			  <div class="product">
+				<img class="photo__catalog" src="img/4feb8e299d0d4a6d048defc4b315c727.jpeg" alt="Домик для кошек">
+				<h2>Товар 20</h2>
+				<p>Артикул товара 2: 12345</p>
+				<button class="add-to-cart">Добавить в корзину</button>
+			  </div>
+		  </div>
+	</main>
+
+
+	<footer class="footer">
+		<div class="container">
+		  <div class="footer-content">
+			<h3 class="footer__title">Контакты</h3>
+			<p class="footer__text">Телефон: +123456789</p>
+			<p class="footer__text">Email: alex@mail.ru</p>
+			<p class="footer__text">Адрес: Пресненская наб., 10, стр. 1, Москва</p>
+		  </div>
+		</div>
+	  </footer>
+
+
+	<script src="https://kit.fontawesome.com/177f6a54cd.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

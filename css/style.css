@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body.lock {
+    overflow: hidden;
+  }
+  
+  /*--------------------/Обнуление, body--------------------*/
+  /*--------------------Общие стили--------------------*/  
+  .title {
+    font-size: 100px;
+    color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 30px;
+    }
+  }
+  
+  footer {
+    height: 40vw;
+    background-color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #000;
+    font-size: 100px;
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      font-size: 30px;
+    }
+  }
+
+.logo__style {
+  color: #4CAF50;
+  font-weight: bold;
+}
+  
+  /*--------------------/Общие стили--------------------*/
+  /*--------------------Шапка--------------------*/
+  .header {
+    margin-bottom: 35px;
+    background-color: #fcac45;
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  
+  .header__logo {
+    text-decoration: none;
+    color: #000;
+    font-style: italic;
+    font-size: 24px;
+  }
+  
+  /*--------------------/Шапка--------------------*/
+  /*--------------------Меню--------------------*/
+  .menu__icon {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .menu__icon {
+      display: block;
+      width: 30px;
+      height: 18px;
+      position: relative;
+      z-index: 5;
+      cursor: pointer;
+    }
+    .menu__icon span {
+      position: absolute;
+      top: calc(50% - 1px);
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+    .menu__icon span:first-child {
+      top: 0;
+    }
+    .menu__icon span:last-child {
+      top: auto;
+      bottom: 0;
+    }
+    .menu__icon.active span {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    .menu__icon.active span:first-child {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      top: calc(50% - 1px);
+    }
+    .menu__icon.active span:last-child {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      bottom: calc(50% - 1px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .menu__body {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      z-index: 100000000;
+    }
+  }
+  
+  .menu__body.active {
+    left: 0;
+  }
+  
+  .menu__list {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .menu__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 30px;
+      gap: 0;
+      height: 100%;
+      width: 60%;
+      background-color: #fcac45;
+      overflow: auto;
+    }
+  }
+  
+  .menu__link {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .menu__link:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .menu__link {
+      display: block;
+      font-size: 25px;
+      line-height: 70px;
+    }
+  }
+
+body {
+  z-index: -312313;
+  background-color: #f1f1f1;
+}
+
+/* .input-group {
+  padding-top: 40px;
+
+}
+
+.main__search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.section__first-title {
+  text-align: center;
+  font-size: 34px;
+} */
+
+#search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#products-container {
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  display: block;
+  margin: 20px;
+  text-align: center;
+}
+
+.add-to-cart {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #fcac45;
+}
+
+.photo__catalog {
+  width: 270px;
+  height: 220px;
+}
+
+/* Стили для карточек товаров */
+#products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: calc(100% / 4 - 20px);
+  margin: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+  .product {
+    width: calc(100% / 3 - 20px);
+  }
+  #search-button {
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .product {
+    width: calc(100% / 2 - 20px);
+  }
+  #search-button {
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .product {
+    width: calc(100% - 20px);
+  }
+  #search-button {
+    color: #000;
+  }
+}
+
+#search-button {
+  background-color: #fcac45;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+#search-button:hover {
+  color: #fff;
+  background-color: #45a049;
+}
+
+#search-input {
+  margin-right: -4px;
+  padding: 6px 65px 6px 3px;
+  border-radius: 3px;
+  border: 1px solid #000;
+}
+
+/* footer */
+footer {
+  background-color: #fcac45;
+  padding: 20px;
+  max-height: 130px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  text-align: center;
+  color: #000;
+}
+
+.footer-content h3 {
+  margin-bottom: 10px;
+}
+
+.footer__title {
+  font-size: 20px;
+}
+
+.footer__text {
+  font-size: 14px;
+}
+
+.footer-content p {
+  /* margin-bottom: 5px; */
+}
